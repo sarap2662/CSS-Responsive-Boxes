@@ -36,7 +36,6 @@ aside {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 1;
-
 }
 
 main {
@@ -49,9 +48,6 @@ aside  div {
   width: 22%;
   margin: 2vw;
 }
-
-
-
 
 @media (min-width: 600px) {
   .wrapper {
