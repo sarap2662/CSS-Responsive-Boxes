@@ -1,3 +1,83 @@
 body {
   background: papayawhip;
 }
+
+*{
+font-size: 65px;
+text-align: center;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70vh;
+  flex-grow: 3;
+}
+
+main {
+  margin: 45px;
+  flex-grow: 3;
+  width: 90%;
+}
+
+header, footer, aside, .wrapper  {
+  flex-grow: 1;
+  max-height: 10vh;
+  margin: .5em;
+}
+
+aside  {
+  background: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  min-height: 25vh;
+  width: 90%;
+  
+
+
+
+}
+header, footer{
+  background: lightpink;
+}
+aside div {
+  flex-grow: 10;
+  margin: 45px;
+}
+
+
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  header {
+    width: 100%;
+    max-height: 10vh;
+  }
+  .wrapper {
+    flex-basis: 65%;
+    justify-content: stretch;
+    min-height:  80vh;
+
+  }
+  footer {
+    margin: 45px;
+    min-height:  80vh;
+    flex-grow: 2;
+   }
+  }
